@@ -1,0 +1,76 @@
+<app-dashboard-nav></app-dashboard-nav>
+
+<article>
+  <div class="top-section">
+    <h2>Influencers</h2>
+  </div>
+  <!-- <button class="refBtn">Refresh</button> -->
+  <br>
+  <div class="table-div">
+    <table>
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>HANDLE</th>
+          <th>PLATFORM</th>
+          <th>CATEGORY</th>
+          <th>SUBSCRIBERS</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="filters">
+          <td><app-filter-text
+            [arrayToFilter]="influencerList"
+            [filterType]="'name'"
+            (filterEvent)="setFilter($event)"
+          ></app-filter-text></td>
+
+          <td><app-filter-text
+            [arrayToFilter]="influencerList"
+            [filterType]="'handle'"
+            (filterEvent)="setFilter($event)"
+          ></app-filter-text></td>
+
+          <td><app-filter-text
+            [arrayToFilter]="influencerList"
+            [filterType]="'platform'"
+            (filterEvent)="setFilter($event)"
+          ></app-filter-text></td>
+
+          <td><app-filter-text
+            [arrayToFilter]="influencerList"
+            [filterType]="'category'"
+            (filterEvent)="setFilter($event)"
+          ></app-filter-text></td>
+
+          <td><app-filter-number
+            [arrayToFilter]="influencerList"
+            [filterType]="'subCount'"
+            (filterEvent)="setFilter($event)"
+            ></app-filter-number></td>
+
+          <td>🔎</td>
+          <td>❌</td>
+        </tr>
+
+        <tr *ngFor="let influ of filteredInflu" class="influencer-info">
+          <td>{{ influ.name }}</td>
+          <td>{{ influ.handle }}</td>
+          <td>{{ influ.platform }}</td>
+          <td>{{ influ.category }}</td>
+          <td>{{ influ.subCount }}</td>
+          <td>
+            <button (click)="editNavigate(influ)" class="editBtn" [disabled]="!isAdmin">EDIT</button>
+          </td>
+          <td>
+            <button (click)="deleteInflu(influ.id)" class="delBtn" [disabled]="!isAdmin">DELETE</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</article>

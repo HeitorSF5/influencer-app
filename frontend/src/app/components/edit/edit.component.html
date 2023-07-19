@@ -1,0 +1,15 @@
+<app-dashboard-nav></app-dashboard-nav>
+<article>
+  <div class="edit-top">
+    <h2>Editing: {{name}} - {{handle}}</h2>
+  </div>
+  <app-form-influ
+    (onSubmit)="submitHandler($event)"
+    [btnText]="btnText"
+    [name]="name"
+    [handle]="handle"
+    [platform]="platform"
+    [category]="category"
+    [subCount]="subCount"
+  ></app-form-influ>
+</article>

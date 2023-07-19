@@ -1,0 +1,26 @@
+<form (ngSubmit)="submit()" [formGroup]="influForm" ngNativeValidate>
+  <div class="form-group">
+    <label for="name">Name: </label>
+    <input type="text" formControlName="name"  value="{{name}}" [(ngModel)]="name" placeholder="Name here..." required>
+    <br>
+
+    <label for="handle">Handle: </label>
+    <input type="text" formControlName="handle" value="{{handle}}" [(ngModel)]="handle"  placeholder="@handle" required>
+    <br>
+
+    <label for="platform">Platform: </label>
+    <input type="text" formControlName="platform" value="{{platform}}" [(ngModel)]="platform" placeholder="Platform here..." required>
+    <br>
+
+    <label for="category">Category: </label>
+    <input type="text" formControlName="category" value="{{category}}" [(ngModel)]="category" placeholder="Category here..." required>
+    <br>
+
+    <label for="subCount">Subcount: </label>
+    <input type="number" formControlName="subCount" value="{{subCount}}" [(ngModel)]="subCount" placeholder="Numbers only" min="0" inputmode="numeric" required>
+    <br>
+
+    <input type="submit" value="{{ btnText }}">
+  </div>
+</form>
+

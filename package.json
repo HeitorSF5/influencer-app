@@ -4,7 +4,9 @@
   "description": "This is an App with functional both Front and Back End with a MySQL DB communication via Sequelize, and Express.js for http type requests.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "concurrently \"cd frontend && npm i\" \"cd backend && npm i\"",
+    "start": "concurrently \"cd frontend && ng serve\" \"cd backend && npm start\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/HeitorSF5/influencer-app/issues"
   },
-  "homepage": "https://github.com/HeitorSF5/influencer-app#readme"
+  "homepage": "https://github.com/HeitorSF5/influencer-app#readme",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
 }
