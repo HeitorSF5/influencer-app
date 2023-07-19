@@ -16,6 +16,13 @@ I **strongly** recommend you read and follow these steps in order:
 
 <details>
   <summary>
+    <strong>Deployment: </strong>
+  </summary>
+  https://influencer-app-production.up.railway.app/
+</details>
+
+<details>
+  <summary>
     <strong>🌐 Environment Setup</strong>
   </summary> <br>
     
