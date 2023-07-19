@@ -1,0 +1,28 @@
+.dashboard-container {
+  flex-direction: column;
+  align-items:  center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(24, 29, 29);
+  color: bisque;
+
+}
+
+button {
+  background-color: azure;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 0.3em 1em;
+  transition: 0.2s;
+  margin: 10px 3px;
+}
+
+button:hover {
+  background-color: rgb(13, 137, 98);
+  color: aliceblue;
+}
+
+.logoutBtn:hover {
+  background-color: brown;
+
+}

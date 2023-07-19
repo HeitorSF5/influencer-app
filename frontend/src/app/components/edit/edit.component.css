@@ -1,0 +1,9 @@
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(38, 48, 77);
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

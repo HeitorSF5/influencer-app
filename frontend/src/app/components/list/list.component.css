@@ -1,0 +1,75 @@
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategray;
+  color: azure;
+  display: flex;
+  align-items: center;
+}
+
+.table-div {
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+table {
+  background-color: rgb(29, 31, 51);
+  border: 1px solid white;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: rgb(1, 6, 2);
+  border: 1px solid white;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(22, 22, 30);
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+  background-color: rgb(1, 6, 2);
+}
+
+
+.influencer-info p{
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: azure;
+  border: 1px solid transparent;
+  font-weight: bold;
+  padding: 0.3em 1em;
+  transition: 0.2s;
+}
+
+.refBtn:hover {
+  background-color:rgb(245, 229, 151);
+}
+
+.editBtn:hover {
+  background-color: aqua;
+}
+
+.delBtn:hover {
+  background-color: rgb(209, 31, 31);
+  color: azure;
+}
+
+.filters {
+  background-color: rgb(1, 6, 2);
+}

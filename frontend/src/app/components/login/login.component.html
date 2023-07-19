@@ -1,0 +1,12 @@
+<h1>LOGIN</h1>
+<form (ngSubmit)="submit()" [formGroup]="loginForm" ngNativeValidate>
+  <label for="username">Username: </label>
+  <input type="text" id="username" name="username" value="{{username}}" required formControlName="username">
+  <br>
+
+  <label for="password">Password: </label>
+  <input type="password" id="password" name="password" value="{{password}}" required formControlName="password">
+  <br>
+
+  <input type="submit" value="Login"/>
+</form>
