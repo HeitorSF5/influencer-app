@@ -1,0 +1,19 @@
+{
+  "name": "influencer-app",
+  "version": "1.0.0",
+  "description": "This is an App with functional both Front and Back End with a MySQL DB communication via Sequelize, and Express.js for http type requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeitorSF5/influencer-app.git"
+  },
+  "author": "Heitor Souza F",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeitorSF5/influencer-app/issues"
+  },
+  "homepage": "https://github.com/HeitorSF5/influencer-app#readme"
+}
