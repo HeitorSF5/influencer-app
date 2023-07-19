@@ -80,7 +80,7 @@ I **strongly** recommend you read and follow these steps in order:
       - `handle`: VarChar
       - `platform`: VarChar
       - `category`: VarChar
-      - `subCount`: VarChar
+      - `subCount`: Numeric
 </details>
 
 <details>
