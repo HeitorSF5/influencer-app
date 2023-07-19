@@ -68,12 +68,13 @@ I **strongly** recommend you read and follow these steps in order:
   </summary>
   
   - The Database is comprised of two tables:
+
     - `users`
       - `id`: Numeric PK Auto Incremental
       - `username`: VarChar Unique
       - `password`: VarChar
     
-    -`influencers`
+    - `influencers`
       - `id`: Numeric PK Auto Incremental
       - `name`: VarChar
       - `handle`: VarChar
