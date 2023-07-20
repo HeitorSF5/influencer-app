@@ -7,9 +7,13 @@ const loginService = async (user) => {
   const hashPassword = md5(password)  
   const userLogged = await loginModel({username, password: hashPassword});
   const admin = username==="binah"
+  console.log('inside Service for Login! Here are the creds:', user)
 
-  if (!userLogged) return { code: 404, error: 'Invalid credentials' };
-
+  if (!userLogged) { 
+    console.log('Couldnt find user in the DB!')
+    return { code: 404, error: 'Invalid credentials' }
+  }
+  console.log('User was found in the Database!')
   const accessToken = token({ username, password });
   return { accessToken, admin };
 }; // to do: proper admin credential check
