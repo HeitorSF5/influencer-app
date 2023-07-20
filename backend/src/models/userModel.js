@@ -7,12 +7,14 @@ const loginModel = async (user) => {
   console.log('In model! Making connection to MySQL now.')
 
   try {
-    const [query] = await connection.execute(
+    const query = await connection.execute( // CHANGE IT BACK TO [query]
       'SELECT username FROM Users WHERE username=? AND password=?',
       [username, hashedPassword],
     );
     if(query.length > 0) return true;
-    else return false;
+    // else return false;
+    console.log('RESULT OF THE QUERY: ', query)
+    return query;
   } catch(err) {
     console.log('--- ERROR! ---', err)
   }
