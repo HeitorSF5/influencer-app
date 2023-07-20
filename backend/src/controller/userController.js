@@ -1,6 +1,7 @@
 const loginService = require('../service/userService');
 
 const loginControl = async (req, res) => {
+  console.log('inside the controller!')
   const userInfo = req.body;
   const userLogged = await loginService(userInfo);
   if ('error' in userLogged) {

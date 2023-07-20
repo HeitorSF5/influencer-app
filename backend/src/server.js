@@ -9,5 +9,5 @@ const app = require('./app');
 // const credentials = { key: privateKey, cert: certificate };
 // const httpsServer = https.createServer(credentials, app);
 
-app.listen(PORT, () => console.log('running on HTTPS Port', PORT));
+app.listen(PORT, () => console.log('running on Port', PORT));
 // httpsServer.listen(PORT, () => console.log('running on HTTPS Port', PORT));
