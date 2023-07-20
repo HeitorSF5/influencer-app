@@ -19,8 +19,9 @@ I **strongly** recommend you read and follow these steps in order:
     <strong>🧙‍♂️ Deployment: </strong>
   </summary>
   https://influencer-app-production.up.railway.app/
-
-  Note:
+  <br>
+  . Note:
+  
     - Railway HATES reloading pages and the DB queries are inconsistent in how long they take.
     - If you Refresh the page it WILL **kill** the app. If you edit, add or delete an entry and it does not seem to reflect in the List, click any button that would navigate you (such as `SHOW ALL`, `+NEW` or `EDIT`) away from the list and come back to it via `SHOW ALL` and it will show, I promise! 
 
