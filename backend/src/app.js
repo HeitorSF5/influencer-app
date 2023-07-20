@@ -16,6 +16,5 @@ app.use(express.json());
 app.use(express.static(frontEndBuildPath));
 app.use(loginRouter);
 app.use(influRouter);
-console.log('App file setup')
 
 module.exports = app;

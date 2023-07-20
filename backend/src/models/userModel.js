@@ -4,22 +4,16 @@ const connection = require('./connection');
 const loginModel = async (user) => {
   const { username, password } = user;
   const hashedPassword = md5(password);
-  console.log('In model! Making connection to MySQL now.')
 
   try {
     const [query] = await connection.execute(
       'SELECT username FROM Users WHERE username=? AND password=?',
       [username, hashedPassword],
     );
-    if(query.length > 0) {
-      console.log('result of query with length > 0: --- ', query)
-      return true
-    };
-    console.log('RESULT OF THE QUERY <= 0 length: ', query)
-    // else return false;
-    return false;
+    if(query.length > 0) return true
+    else return false;
   } catch(err) {
-    console.log('--- ERROR! ---', err)
+    console.log('--- ERROR! --- \n \n', err)
   }
 }
 
