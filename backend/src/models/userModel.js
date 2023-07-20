@@ -14,7 +14,7 @@ const loginModel = async (user) => {
     if(query.length > 0) return true;
     // else return false;
     console.log('RESULT OF THE QUERY: ', query)
-    return query;
+    return false;
   } catch(err) {
     console.log('--- ERROR! ---', err)
   }
