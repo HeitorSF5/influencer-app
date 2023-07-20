@@ -7,7 +7,11 @@ const path = require('path');
 const app = express();
 const frontEndBuildPath = path.join(__dirname, '../frontend-build');
 
-app.use(cors());
+const corsOptions = { 
+  origin: 'http://localhost:4200'
+}
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.static(frontEndBuildPath));
 app.use(loginRouter);
