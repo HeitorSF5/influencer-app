@@ -11,9 +11,9 @@ const loginModel = async (user) => {
       'SELECT username FROM Users WHERE username=? AND password=?',
       [username, hashedPassword],
     );
+    console.log('RESULT OF THE QUERY: ', query)
     if(query.length > 0) return true;
     // else return false;
-    console.log('RESULT OF THE QUERY: ', query)
     return false;
   } catch(err) {
     console.log('--- ERROR! ---', err)
