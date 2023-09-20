@@ -6,7 +6,7 @@ App using Angular, Express.js and MySQL. It contains:
   - Authorization required for app access
   - Encrypted passwords in the database with MD5 Hash + Secret
   - Unitary tests for Http requests and data integrity
-  - MVC/MSC Architecture
+  - MSC Architecture
   - REST API
 
 ---
